@@ -1,150 +1,116 @@
- * { 
-    padding:0;
-    margin:0;
-    font-family: sans-serif;
-    box-sizing: border-box;
- }
+/* Variables */
+:root {
+    --primary: #ffffff;
+    --secondary: #f4f4f4;
+    --tertiary: #000000;
+}
 
+/* Reset */
+body, h1, h2, p, a, ul, li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Base styles */
 html, body {
     height: 100%;
 }
 
 body {
     overflow-x: hidden;
-}
-
-.container {
-    height: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-rows: auto 75% auto;
+    font-family: 'Indie Flower';
 }
 
 #header {
-    padding-top: 20px;
-    text-align: center;
-    background-color: #f4f4f4;
+    background-color: var(--secondary);
 }
 
-.w-90 {
-    width: 90%;
-    margin: auto;
+.navbar-toggler {
+    font-size: 1rem;
 }
 
-.navigation-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container-fluid {
+    padding: 0;
 }
 
-.navigation-bar ul {
-    display: flex;
-}
-
-.navigation-bar ul li {
-    list-style: none;
-    margin: 20px;
-}
-
-.navigation-bar a {
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.navigation-bar a:hover {
-    background-color: #000000;
-    color: #ffffff
-}
-
-#main {
-    background-image: url("../img/main.jpg");
-    background-position: center;
-    background-size: cover;
+.main-picture {
+    box-sizing: border-box;
+    width: 100%;
 }
 
 #footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 35px; 
-    background: #f4f4f4;
+    background-color: var(--secondary);
 }
 
-#footer p {
-    text-align: center; 
+.fa {
+    color: var(--tertiary);
 }
 
-.content {
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.fa:hover {
+    color: var(--tertiary);
+    opacity: 0.5;
 }
 
-.content h2 {
-    text-align: center;
-    font-size: 40px;
+.box {
+    width: 90%;
 }
 
-.cards-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Fonts */
+@font-face {
+    font-family: 'Indie Flower';
+    src: url('../assets/fonts/IndieFlower-Regular.ttf');
 }
 
-.card {
-    width: 20%;
-    height: 200px;
-    margin: 50px;
+h1, h2, a {
+    text-transform: uppercase;
 }
 
-.card h3 {
-    text-align: center;
-    background-color: #f4f4f4;
+h1 {
+    font-size: 2.5rem;
 }
 
-.card img {
-    width: 100%;
-    height: 100%;
+/* Mobile styles */
+@media screen and (max-width: 767px) {
+    a, p, .fa{
+        font-size: 1rem;
+    }
+
+    .vh-50 {
+        height: 50vh;
+    }
+
+/*     .carousel {
+        width: 100%;
+    } */
+
 }
 
-.card-e {
-    width: 30%;
-    height: 300px;
-    margin: 50px;
+@media screen and (min-width: 768px) {
+    a, p, .fa{
+        font-size: 1.5rem;
+    }
+
+    .vh-50 {
+        height: 60vh;
+    }
+
+/*     .carousel {
+        width: 75%;
+    } */
 }
 
-.card-e h3 {
-    text-align: center;
-    background-color: #f4f4f4;
-}
+/* Desktop styles */
+@media screen and (min-width: 1024px) {
+    a, p, .fa{
+        font-size: 2rem;
+    }
 
-.card-e iframe {
-    width: 100%;
-    height: 300px;
-}
+    .vh-50 {
+        height: 75vh;
+    }
 
-.card-about {
-    width: 400px;
-    margin: 50px;
-}
-
-.card-about p {
-    background-color: #f4f4f4;
-}
-
-.contact-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-form form {
-    width: 30%;
-}
-
-.contact-form input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+/*     .carousel {
+        width: 75%;
+    } */
 }
