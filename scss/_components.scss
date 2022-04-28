@@ -1,0 +1,10 @@
+@import './variables';
+
+.fa {
+    color: var($tertiary);
+}
+
+.fa:hover {
+    color: var($tertiary);
+    opacity: 0.5;
+}

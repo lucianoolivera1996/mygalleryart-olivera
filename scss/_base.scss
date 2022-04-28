@@ -1,0 +1,53 @@
+@import './variables';
+
+/* Reset */
+body, h1, h2, p, a, ul, li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Base styles */
+html, body {
+    height: 100%;
+}
+
+html {
+    body {
+        overflow-x: hidden;
+        font-family: 'Indie Flower';
+        background-color: var($secondary);
+    }
+}
+
+.navbar-toggler {
+    font-size: 1rem;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.content {
+    height: 75%;
+}
+
+.main-picture {
+    background-image: url("../assets/img/main.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Indie Flower';
+    src: url('../assets/fonts/IndieFlower-Regular.ttf');
+}
+
+h1, h2, a {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
