@@ -1,10 +1,52 @@
-@import './variables';
-
-.fa {
-    color: var($tertiary);
+.link:hover {
+    color: rgba($color: #e1ff00, $alpha: 0.90) !important;
 }
 
-.fa:hover {
-    color: var($tertiary);
-    opacity: 0.5;
+.card {
+    background-color: transparent;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 80%;
+        margin: 15px 0;
+    }
+    @media screen and (min-width: 992px) {
+        width: 85%;
+    }
+}
+
+.row {
+    @media screen and (max-width: 767px) {
+        margin: 60px 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin: 70px 0;
+    }
+}
+
+.video {
+    @media screen and (max-width: 767px) {
+        height: 350px;
+    }
+
+    @media screen and (min-width: 768px) {
+        height: 450px;
+    }
+    @media screen and (min-width: 992px) {
+        height: 350px;
+    }
+}
+
+.about-img {
+    width: 100%;
+    @media screen and (min-width: 992px) {
+        width: 50%;
+        height: 350px;
+    }
 }
